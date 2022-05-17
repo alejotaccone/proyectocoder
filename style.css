@@ -3,7 +3,7 @@ body {
   font-family: "Akshar", sans-serif;
 }
 header {
-  background: #113c73;
+  background: linear-gradient(to right, #245eaa, #113c73);
   padding: 0rem 0;
   position: sticky;
   top: 0;
