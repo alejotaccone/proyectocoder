@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;700&display=swap");
+body {
+  font-family: "Akshar", sans-serif;
+}
+header {
+  background: #113c73;
+  padding: 0rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.navbar {
+  background-color: transparent !important;
+}
+
+.nav-img {
+  border-radius: 50px;
+  height: 150px;
+}
+#intro {
+  background-image: url(img/bariloche22.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 80vh;
+}
+.icon {
+  height: 60px;
+}
+#actividades {
+  background-image: url(img/actividades.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 80vh;
+}
+#hospedaje {
+  background-image: url(img/hospedaje.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 80vh;
+}
+.prueba {
+  align-items: center;
+  margin: auto;
+}
+.prueba button {
+  background-color: aliceblue;
+  border: 0em;
+}
+.prueba p {
+  font-size: 2.7rem;
+}
+.prueba a {
+  text-decoration: none;
+  font-size: 2.2rem;
+  padding: 0 15px;
+}
+.contacto {
+  margin: auto;
+  align-items: center;
+  margin-top: 3rem;
+}
+.contacto__tittle {
+  font-size: 2.1rem;
+  color: #1e73be;
+  padding: 1.2rem 0;
+  font-weight: 600;
+}
+.contacto__text {
+  color: #0094ff;
+  font-size: 1.2rem;
+}
+.contacto__form {
+  margin: auto;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: #494949;
+}
+.contacto__form p {
+  margin-bottom: 0;
+  padding-top: 1rem;
+}
+
+select {
+  margin: 0.8rem 0;
+  color: #494949;
+}
+
+textarea {
+  outline: none;
+  border: 0;
+  cursor: pointer;
+  width: 400px;
+  resize: none;
+}
+input {
+  margin-top: 0.8rem;
+}
