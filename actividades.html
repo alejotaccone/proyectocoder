@@ -16,16 +16,19 @@
     <link rel="stylesheet" href="style.css" />
     <title>Turismo Bariloche</title>
   </head>
+
   <body>
+    <!-- NAV -->
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-primary">
         <div class="container-fluid">
-          <img
-            class="img-fluid nav-img"
-            src="img/Logo.jpg"
-            alt="Logo de la empresa"
-          />
-
+          <div class="px-5">
+            <img
+              class="img-fluid nav-img"
+              src="img/Logo.jpg"
+              alt="Logo de la empresa"
+            />
+          </div>
           <button
             class="navbar-toggler"
             type="button"
@@ -37,14 +40,17 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse show" id="navbarNavAltMarkup">
+          <div
+            class="collapse navbar-collapse show justify-content-end px-5 fs-6"
+            id="navbarNavAltMarkup"
+          >
             <ul class="navbar-nav">
-              <li>
+              <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="index.html"
                   >Inicio</a
                 >
               </li>
-              <li>
+              <li class="nav-item">
                 <a
                   class="nav-link active"
                   aria-current="page"
@@ -52,7 +58,7 @@
                   >Actividades</a
                 >
               </li>
-              <li>
+              <li class="nav-item">
                 <a
                   class="nav-link active"
                   aria-current="page"
@@ -60,7 +66,7 @@
                   >Hospedaje</a
                 >
               </li>
-              <li>
+              <li class="nav-item">
                 <a
                   class="nav-link active"
                   aria-current="page"
@@ -68,7 +74,7 @@
                   >Quienes Somos?</a
                 >
               </li>
-              <li>
+              <li class="nav-item">
                 <a
                   class="nav-link active"
                   aria-current="page"
@@ -81,60 +87,127 @@
         </div>
       </nav>
     </header>
+    <!-- Cards -->
     <section>
       <div class="container">
-        <div class="row text-center">
-          <h1 class="col-12">Conoce nuestras Actividades</h1>
-          <div class="card col-md-4">
+        <div class="row text-center pt-5">
+          <h1 class="col-12 pb-4">Conoce nuestras Actividades</h1>
+          <div class="card col-md-4 align-items-center">
             <img
-              src="assets/images/bs-images/img-2x1.png"
+              src="img/ree.webp"
               class="card-img-top"
-              alt="card-img-top"
+              alt="Refugio extremo encantado"
             />
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p>
+              <div class="card__tittle">
+                <h5 class="card-title fs-3">Refugio Extremo Encantado</h5>
+              </div>
+              <div class="card__btn">
+                <p class="card-text fs-5">
+                  Precio por adulto desde <br />
+                  $35.000
+                </p>
+                <button type="button" class="btn btn-primary">
+                  <a href=""> Saber Mas </a>
+                </button>
+              </div>
+              <div
+                class="d-flex align-items-start justify-content-center card__cuotas"
+              >
+                <img
+                  src="img/bx-credit-card.svg"
+                  alt="icono targeta de credito"
+                />
+                <p class="fs-6">Hasta 12 cuotas sin interes</p>
+              </div>
             </div>
           </div>
-          <div class="card col-md-4">
+          <div class="card col-md-4 align-items-center">
             <img
-              src="assets/images/bs-images/img-2x1.png"
+              src="img/bylp.webp"
               class="card-img-top"
-              alt="card-img-top"
+              alt="Bolson y lago puelo"
             />
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p>
+              <div class="card__tittle">
+                <h5 class="card-title fs-3">Bolson y Lago Puelo</h5>
+              </div>
+              <div class="card__btn">
+                <p class="card-text fs-5">
+                  Precio por adulto desde <br />
+                  $35.000
+                </p>
+                <button type="button" class="btn btn-primary">
+                  <a href=""> Saber Mas </a>
+                </button>
+              </div>
+              <div
+                class="d-flex align-items-start justify-content-center card__cuotas"
+              >
+                <img
+                  src="img/bx-credit-card.svg"
+                  alt="icono targeta de credito"
+                />
+                <p class="fs-6">Hasta 12 cuotas sin interes</p>
+              </div>
             </div>
           </div>
-          <div class="card col-md-4">
-            <img
-              src="assets/images/bs-images/img-2x1.png"
-              class="card-img-top"
-              alt="card-img-top"
-            />
+          <div class="card col-md-4 align-items-center">
+            <img src="img/cc.webp" class="card-img-top" alt="Cerro Catedral" />
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p>
+              <div class="card__tittle">
+                <h5 class="card-title fs-3">Cerro Catedral</h5>
+              </div>
+              <div class="card__btn">
+                <p class="card-text fs-5">
+                  Precio por adulto desde <br />
+                  $35.000
+                </p>
+                <button type="button" class="btn btn-primary">
+                  <a href=""> Saber Mas </a>
+                </button>
+              </div>
+              <div
+                class="d-flex align-items-start justify-content-center card__cuotas"
+              >
+                <img
+                  src="img/bx-credit-card.svg"
+                  alt="icono targeta de credito"
+                />
+                <p class="fs-6">Hasta 12 cuotas sin interes</p>
+              </div>
             </div>
           </div>
-          <div></div>
         </div>
       </div>
     </section>
-
+    <!-- Oferta -->
+    <div class="container">
+      <div class="row text-center pt-5">
+        <div class="ofertas">
+          <div><span>¡Recibe ofertas exclusivas en tu email!</span></div>
+          <div class="d-flex align-items-center">
+            <div class="col-md-4">
+              <img class="ofertas-img" src="img/bx-mail-send.svg" alt="" />
+            </div>
+            <div class="col-md-4">
+              <input
+                type="email"
+                class="form-control"
+                id="formControlInput"
+                placeholder="Ingresa tu email"
+              />
+            </div>
+            <div class="col-md-4 ofertas-btn">
+              <button type="button" class="btn btn-outline-primary">
+                Enviar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
     <footer class="container-fluid bg-dark mt-5">
       <div class="row text-center m-auto">
         <div class="d-flex justify-content-between">
@@ -143,13 +216,14 @@
             <a href="">Alejo</a>
           </p>
           <div class="">
-            <img src="img/bxl-twitter.svg" alt="" />
-            <img src="img/bxl-facebook.svg" alt="" />
-            <img src="img/bxl-instagram-alt.svg" alt="" />
+            <a href=""> <img src="img/bxl-twitter.svg" alt="" /></a>
+            <a href=""> <img src="img/bxl-facebook.svg" alt="" /></a>
+            <a href=""> <img src="img/bxl-instagram-alt.svg" alt="" /></a>
           </div>
         </div>
       </div>
     </footer>
+    <!-- Bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

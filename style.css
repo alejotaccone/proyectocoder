@@ -20,7 +20,11 @@ header {
 
 .nav-img {
   border-radius: 50px;
-  height: 150px;
+  height: 130px;
+}
+nav li {
+  padding-left: 1rem;
+  font-size: 1.1rem;
 }
 #intro {
   background-image: url(img/bariloche22.jpg);
@@ -114,4 +118,37 @@ footer {
 footer img {
   height: 22px;
   padding-left: 1rem;
+}
+.card-body {
+  padding: 0;
+}
+.card {
+  padding: 0px;
+}
+.card__tittle {
+  padding: 5px;
+}
+.card__btn {
+  padding: 10px;
+  border-top: 1px solid #888888;
+}
+.card__cuotas {
+  color: #595959;
+  padding: 10px;
+  border-top: 1px solid #888888;
+}
+
+.card a {
+  text-decoration: none;
+  color: aliceblue;
+}
+.ofertas {
+  margin-top: 2rem;
+}
+.ofertas-img {
+  height: 90px;
+  padding-left: 260px;
+}
+.ofertas-btn {
+  padding-right: 260px;
 }
