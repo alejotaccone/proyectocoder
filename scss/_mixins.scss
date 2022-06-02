@@ -1,0 +1,14 @@
+@mixin tittle($color) {
+  font-size: 2.1rem;
+  color: $color;
+  padding: 1.2rem 0;
+  font-weight: 600;
+}
+$imagenes: (
+  intro: url(img/bariloche22.jpg),
+  card1: url(img/actividades.jpg),
+  card2: url(img/hospedaje.jpg),
+);
+@mixin bgimg($imagen) {
+  background-image: map-get($imagenes, $imagen);
+}

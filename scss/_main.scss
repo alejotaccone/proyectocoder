@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Akshar", sans-serif;
+}
+header {
+  background: linear-gradient(to right, #245eaa, #113c73);
+  padding: 0rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.navbar {
+  background-color: transparent !important;
+  li {
+    padding-left: 1rem;
+    font-size: 1.1rem;
+  }
+  img {
+    border-radius: 80px;
+    height: 100px;
+  }
+}
+
+#intro {
+  @include bgimg(intro);
+  @extend .bg-img;
+}
+.icon {
+  height: 60px;
+}
+#actividades {
+  @include bgimg(card1);
+  @extend .bg-img;
+}
+#hospedaje {
+  @include bgimg(card2);
+  @extend .bg-img;
+}
+
+.prueba {
+  align-items: center;
+  margin: auto;
+  button {
+    background-color: aliceblue;
+    border: 0em;
+  }
+  p {
+    color: $color-white;
+    font-size: 2.7rem;
+  }
+  a {
+    text-decoration: none;
+    font-size: 2.2rem;
+    padding: 0 15px;
+  }
+}
+.contacto {
+  margin: auto;
+  align-items: center;
+  margin-top: 0.8rem;
+  h2 {
+    @include tittle(#1e73be);
+  }
+  .contacto__text {
+    color: #0094ff;
+    font-size: 1.2rem;
+  }
+  .contacto__form {
+    margin: auto;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: #494949;
+    p {
+      margin-bottom: 0;
+      padding-top: 1rem;
+    }
+  }
+}
+
+select {
+  margin: 0.8rem 0;
+  color: #494949;
+}
+
+textarea {
+  outline: none;
+  border: 0;
+  cursor: pointer;
+  width: 400px;
+  resize: none;
+}
+input {
+  margin-top: 0.4rem;
+  cursor: pointer;
+}
+.quienessomos {
+  margin-top: 3rem;
+  align-items: center;
+  h2 {
+    @include tittle(black);
+  }
+}
+footer {
+  margin-bottom: 0;
+  img {
+    height: 22px;
+    padding-left: 1rem;
+  }
+}
+.actividades-tittle {
+  @include tittle(black);
+}
+
+.card {
+  padding: 0px;
+  border-color: #494949;
+  .card-body {
+    padding: 0;
+  }
+  .card__tittle {
+    padding: 5px;
+  }
+  .card__btn {
+    padding: 10px;
+    border-top: 1px solid #888888;
+  }
+  .card__cuotas {
+    color: #595959;
+    padding: 10px;
+    border-top: 1px solid #888888;
+  }
+  a {
+    text-decoration: none;
+    color: aliceblue;
+  }
+}
+
+.ofertas {
+  margin-top: 2rem;
+  .ofertas-img {
+    height: 90px;
+    padding-left: 260px;
+  }
+  .ofertas-btn {
+    padding-right: 260px;
+  }
+}
