@@ -32,8 +32,26 @@ header {
   height: 100px;
 }
 
+@media (max-width: 992px) {
+  .navbar ul {
+    text-align: center;
+  }
+}
+
 #intro {
   background-image: url(img/bariloche22.jpg);
+}
+
+@media (max-width: 992px) {
+  #intro .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .icon {
@@ -151,6 +169,18 @@ footer img {
   font-weight: 600;
 }
 
+@media (max-width: 992px) {
+  .excursiones .d-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .card {
   padding: 0px;
   border-color: #494949;
@@ -181,16 +211,51 @@ footer img {
 }
 
 .ofertas {
-  margin-top: 2rem;
+  max-width: 576px;
+  margin: auto;
+  padding: 0 10px;
 }
 
 .ofertas .ofertas-img {
   height: 90px;
-  padding-left: 260px;
 }
 
 .ofertas .ofertas-btn {
-  padding-right: 260px;
+  padding-top: 10px;
+}
+
+.hospedaje .card {
+  margin-bottom: 20px;
+}
+
+.hospedaje .pricebox {
+  height: 100%;
+  border-left: 1px solid #888888;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 992px) {
+  .hospedaje .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hospedaje .pricebox {
+    border-top: 1px solid #888888;
+  }
 }
 
 .bg-img, #intro, #actividades, #hospedaje {

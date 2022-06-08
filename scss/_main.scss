@@ -22,15 +22,27 @@ header {
     border-radius: 80px;
     height: 100px;
   }
+  @media (max-width: 992px) {
+    ul {
+      text-align: center;
+    }
+  }
 }
 
 #intro {
   @include bgimg(intro);
   @extend .bg-img;
+  @media (max-width: 992px) {
+    .row {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
 }
 .icon {
   height: 60px;
 }
+
 #actividades {
   @include bgimg(card1);
   @extend .bg-img;
@@ -113,7 +125,14 @@ footer {
 .actividades-tittle {
   @include tittle(black);
 }
-
+.excursiones {
+  @media (max-width: 992px) {
+    .d-flex {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
 .card {
   padding: 0px;
   border-color: #494949;
@@ -139,12 +158,34 @@ footer {
 }
 
 .ofertas {
-  margin-top: 2rem;
+  max-width: 576px;
+  margin: auto;
+  padding: 0 10px;
   .ofertas-img {
     height: 90px;
-    padding-left: 260px;
   }
   .ofertas-btn {
-    padding-right: 260px;
+    padding-top: 10px;
+  }
+}
+.hospedaje {
+  .card {
+    margin-bottom: 20px;
+  }
+  .pricebox {
+    height: 100%;
+    border-left: 1px solid #888888;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  @media (max-width: 992px) {
+    .row {
+      flex-direction: column;
+      align-items: center;
+    }
+    .pricebox {
+      border-top: 1px solid #888888;
+    }
   }
 }
